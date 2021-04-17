@@ -6,5 +6,6 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/daisy-ui",
   plugins: [],
 }
