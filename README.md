@@ -100,5 +100,12 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+## ⚙️ Customization
 `npm run deploy` will publish to Github Pages
 [More information about publishing using gh-pages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)
+
+[Typography](https://www.gatsbyjs.com/plugins/gatsby-plugin-typography/)
+
+[SASS](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
+
+[PostCSS](https://www.gatsbyjs.com/plugins/gatsby-plugin-postcss/)
