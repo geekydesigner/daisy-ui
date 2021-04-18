@@ -7,5 +7,13 @@
 module.exports = {
   /* Your site config here */
   pathPrefix: "/daisy-ui",
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }
