@@ -105,8 +105,14 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
 [More information about publishing using gh-pages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)
 
+### Plugins
+
 [Typography](https://www.gatsbyjs.com/plugins/gatsby-plugin-typography/)
 
 [SASS](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
 
 [PostCSS](https://www.gatsbyjs.com/plugins/gatsby-plugin-postcss/)
+
+### Future additions
+
+[Github Globe](https://github.blog/2020-12-21-how-we-built-the-github-globe/)

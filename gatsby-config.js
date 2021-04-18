@@ -6,9 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Title from siteMetadata`,
+  },
   pathPrefix: "/daisy-ui",
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

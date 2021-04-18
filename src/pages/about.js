@@ -1,6 +1,8 @@
 import React from "react"
+import { graphql } from "gatsby"
 import * as styles from "./about.module.scss"
-import Layout from "../components/layout"
+import MainLayout from "../components/mainLayout"
+import SubLayout from "../components/subLayout"
 import Container from "../components/container"
 import Header from "../components/header"
 
@@ -16,23 +18,34 @@ const User = props => (
   </div>
 )
 
-export default function About() {
+export default function About({ data }) {
   return (
-    <Layout>
-      <Container>
-        <Header headerText="About CSS Modules" />
+    <MainLayout>
+      <Header headerText={'About | ' + data.site.siteMetadata.title} />
         <p>CSS Modules are cool</p>
-        <User
-          username="Maria Randall"
-          avatar="https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/docs/tutorial/part-two/pexels-daniel-xavier-1102341.jpg"
-          excerpt="I'm Maria Randall. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        />
-        <User
-          username="Daniela Dewitt"
-          avatar="https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/docs/tutorial/part-two/pexels-guilherme-almeida-1858175.jpg"
-          excerpt="I'm Daniela Dewitt. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        />
-      </Container>
-    </Layout>
+      <SubLayout>
+        <Container>
+          <User
+            username="Maria Randall"
+            avatar="https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/docs/tutorial/part-two/pexels-daniel-xavier-1102341.jpg"
+            excerpt="I'm Maria Randall. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+          <User
+            username="Daniela Dewitt"
+            avatar="https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/docs/tutorial/part-two/pexels-guilherme-almeida-1858175.jpg"
+            excerpt="I'm Daniela Dewitt. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+        </Container>
+      </SubLayout>
+    </MainLayout>
   )
 }
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
